@@ -1,38 +1,19 @@
-<div class="app">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2>Coupon Available</h2>
-   
-          <button
-            type="button"
-            class="btn-close"
-            routerLink="/store"
-            aria-label="Close"
-          ></button>
+<div class="app" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="modal-dialog" style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); width: 300px;">
+        <div class="modal-content" style="padding: 20px; text-align: center;">
+            <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center;">
+                <h2>Coupon Available</h2>
+                <button type="button" style="background: none; border: none; font-size: 24px; cursor: pointer;" routerLink="/store" aria-label="Close">?</button>
+            </div>
+
+            <div class="modal-body">
+                <p style="font-size: 18px;">
+                    <b>Coupon Code:</b><br />
+                    <span style="font-size: 24px; color: #007bff;">SUMMERSALE10</span>
+                </p>
+                <p style="font-size: 16px;">Use this coupon code for a 10% discount on your purchase.</p>
+                <button type="button" style="background-color: #007bff; color: #fff; border: none; border-radius: 4px; padding: 10px 20px; font-size: 18px; cursor: pointer; margin-top: 20px;" (click)="addDiscount()" aria-label="Apply">Apply</button>
+            </div>
         </div>
-   
-        <div class="modal-body">
-          <p>
-            <B>Coupon Code:</B><br />
-   
-            <small>SUMMERSALE10</small>
-   
-            <br />
-   
-            Use this coupon code for getting 10% discount in your purchase.
-          </p>
-   
-          <button
-            type="button"
-            class="btn btn-primary float-end"
-            (click)="addDiscount()"
-            aria-label="Apply"
-          >
-            Apply
-          </button>
-          
-        </div>
-      </div>
     </div>
-  </div>
+</div>

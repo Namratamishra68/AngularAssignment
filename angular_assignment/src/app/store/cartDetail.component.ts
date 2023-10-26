@@ -14,7 +14,7 @@ export class CartDetailComponent {
  
     constructor(public cart: Cart , public discount: VoucherRepository , private route: Router) {
  
-        this.discountPercent = this.discount.getDiscount();
+        this.discountPercent = this.discount.retrievingDiscount();
         if (this.discountPercent == 0){
             this.discountRemaining = true
         }

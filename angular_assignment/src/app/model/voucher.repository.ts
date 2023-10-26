@@ -3,13 +3,13 @@ import { Injectable } from "@angular/core";
 @Injectable()
  
 export class VoucherRepository{
-    private discountNumber : number = 0
+    private discount : number = 0
  
-    setDiscount(discountNumber : number){
-        this.discountNumber = discountNumber
+    applyDiscount(discount : number){
+        this.discount = discount
     }
  
-    getDiscount(){
-        return this.discountNumber
+    retrievingDiscount(){
+        return this.discount
     }
 }
